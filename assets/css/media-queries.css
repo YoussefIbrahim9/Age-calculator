@@ -1,0 +1,62 @@
+@media (min-width:425px) {
+
+    section.calculator-container{
+        border-bottom-right-radius: 140px;
+    }
+
+    section p.alert{
+        font-size: 8px;
+    }
+
+    section hr{
+        width: 95%;
+    }
+    section button{
+        left:unset;
+        right: 5px;
+        transform: translate(0,-50%);
+
+    }
+
+    section .outputs p{
+        font-size: 60px;
+    }
+
+    section .outputs p span{
+        font-size: 60px;
+    }
+    
+}
+
+@media (min-width:590px) {
+
+    
+    section.calculator-container{
+        border-bottom-right-radius: 180px;
+        width: 550px;
+    }
+
+    section p.alert{
+        font-size: 10px;
+    }
+
+    section hr{
+        width: 95%;
+    }
+    section button{
+        left:unset;
+        right: 5px;
+        transform: translate(0,-50%);
+
+    }
+
+    section .outputs p{
+        font-size: 70px;
+    }
+    
+    section .outputs p span{
+        font-size: 70px;
+    }
+}
+
+

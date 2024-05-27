@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box;
+}
+
+
+.border-alert{
+    border: solid 1px hsl(0, 100%, 67%) !important;
+}
+
+.changeColorToRed{
+    color: hsl(0, 100%, 67%) !important ;
+}
+.visibility-non{
+    visibility: hidden;
+}
+
+.visibility-show{
+    visibility: visible;
+}
+
+/* style */
+body{
+    margin: 0;
+    position: relative;
+    background-color: hsl(0, 0%, 94%);
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+}
+
+section.calculator-container{
+
+    background-color: hsl(0, 0%, 100%);
+    position: absolute;
+    left: 50%;
+    top: 51%;
+    transform: translate(-50%, -50%);
+    padding: 30px 15px;
+    width: 90%;
+    border-radius: 15px;
+    border-bottom-right-radius: 75px;
+    
+}
+
+section.calculator-container .inputs-cont{
+    display: flex;
+}
+
+section.calculator-container .inputs-cont > div{
+    width: 27%;
+    margin-right: 15px;
+}
+
+section.calculator-container .inputs-cont > div label{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: hsl(0, 1%, 44%);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+section.calculator-container .inputs-cont > div input{
+    width: 100%;
+    margin-top: 5px;
+    border-radius: 3px;
+    border: solid 1px hsl(0, 0%, 86%);
+    outline: none;
+    padding: 10px 5px;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+section.calculator-container .inputs-cont > div input::-webkit-outer-spin-button,
+section.calculator-container .inputs-cont > div input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+section p.alert{
+    margin-top: 5px;
+    font-size: 6px;
+    color: hsl(0, 100%, 67%);
+}
+
+section .separtor{
+    position: relative;
+}
+
+section hr{
+    margin: 50px 0px;
+    border: 1px hsl(0, 0%, 86%) solid;
+}
+
+section button{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: none;
+    background-color: hsl(259, 100%, 65%);
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transition: all 0.3ms ease-in;
+}
+
+section button:hover{
+    background-color:hsl(0, 0%, 8%) ;
+}
+
+
+section button img{
+    width: 25px;
+}
+section .outputs{
+    padding: inherit;
+}
+
+section .outputs p{
+    color: hsl(0, 0%, 8%);
+    font-weight: 800;
+    font-size: 40px;
+    margin: -10px;
+}
+
+section .outputs p span{
+    color:  hsl(259, 100%, 65%);
+    font-size: 40px;
+}
+
+.attribution{
+    margin-top: 30px;
+    height: 30px;
+    width: 100%;
+    position: relative;
+    top: 100%;
+    color: hsl(0, 1%, 44%);
+}
+
+.attribution a{
+    text-decoration: none;
+    color: hsl(259, 100%, 65%);
+}
