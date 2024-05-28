@@ -234,6 +234,11 @@ function calcAge(){
      
 }
 
+function clearInputs(){
+    dayInput.value = "";
+    monthInput.value = "";
+    yearInput.value = "";
+}
 
 function displayResults(){
     if(calcAge()){
@@ -242,6 +247,8 @@ function displayResults(){
         outputMonthP.innerHTML = `<span>${monthsResult}</span> months`
         outputDayP.innerHTML = `<span>${daysResult}</span> days</p>`
         
+        clearInputs();
+
     }
     else{
         outputYearP.innerHTML = `<span>-</span> <span>-</span>  years`;
